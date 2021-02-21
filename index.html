@@ -25,5 +25,84 @@
         usuario, se basa en componentes y es declarativa
         las librerias/frameworks mas usadas reactJS[FB] VueJS angular
     </p>
+
+    <h2>Formularios</h2>
+    <form action="">
+        <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" id="nombre" placeholder="Juanito">
+        </label>
+        <label for="dias">
+            <span>¿Qué días estudias?</span>
+            <input type="text" id="dias" placeholder="Martes y jueves">
+        </label>
+        <label for="horario">
+        <span>¿Qué horario es tu favorito?</span>
+            <input type="time" id="horario" >
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h3>Calendario</h3>
+    <!-- <form action="">
+        <label for="hora">
+            <span>Hora</span>
+            <input type="time" id="hora" name="hora">
+        </label>
+        <label for="Día">
+            <span>Día</span>
+            <input type="date" id="Día" name="Día">
+        </label>
+        <label for="Semana">
+            <span>Semana</span>
+            <input type="week" id="Semana" name="Semana">
+        </label>
+        <label for="Mes">
+            <span>Mes</span>
+            <input type="month" id="Mes" name="Mes">
+        </label>
+        <input type="submit"> 
+    </form> -->
+
+    <!-- <form action="">
+        <label for="calendario">
+            <span>Calendario</span>
+            <input type="datetime-local" id="calendario" name="calendario">
+        </label>
+        <input type="submit">
+    </form> -->
+
+    <form action="">
+        <!-- <label for="nombre">
+            <span>¿Cuál es tu nombre?</span>
+            <input type="text" id="nombre" name="nombre" autocomplete="name">
+        </label>
+        <label for="correo">
+            <span>¿Cuál es tu correo?</span>
+            <input type="email" name="correo" id="correo" autocomplete="email">
+        </label>
+        <label for="pais">
+            <span>¿En qué país vives?</span>
+            <input type="text" id="pais" name="id" autocomplete="country">
+        </label>
+        <label for="cp">
+            <span>¿Cuál es tu código postal?</span>
+            <input type="text" id="cp" name="cp" autocomplete="postal-code" required>
+        </label> -->
+        <!-- <select name="cursos" id="">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="nada">WebAssembly</option>
+        </select> -->
+        <!-- <input type="submit"> -->
+        <input list="cursos" />
+        <datalist id="cursos">
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="nada"></option>
+        </datalist>
+        <input type="submit" value="Transferir">
+        <button type="submit"><b>Retornar</b></button>
+    </form>
 </body>
 </html>
